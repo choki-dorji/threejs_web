@@ -37,9 +37,16 @@
     </style>
   </head>
   <body>
-    <div class="flex h-screen lg:flex-row md:flex-col sm:flex-col font-exo">
+    <div id="popup" class="bg-black bg-opacity-75 fixed px-3 py-2 rounded-lg">
+      <h2 class="text-white text-xs">
+        <span id="population"></span>
+        <span>population</span>
+      </h2>
+      <p id="value" class="text-white font-bold">200 mill</p>
+    </div>
+    <div class="xl:flex h-screen bg-black">
       <div
-        class="bg-black text-white flex justify-center flex-col md:w-screen sm:w-screen">
+        class="xl:w-1/2 text-white flex justify-center flex-col px-8 pt-16 xl:pt-0">
         <div style="max-width: 500px" class="pl-12">
           <h1 class="text-4xl mb-8 leading-none">
             CHALLENGING THE STANDARD OF THE SPACE
@@ -59,7 +66,7 @@
           </a>
         </div>
       </div>
-      <div class="w-1/2 md:w-screen sm:w-screen" id="canvascontainer">
+      <div class="h-screen xl:w-1/2" id="canvascontainer">
         <canvas class="webgl"></canvas>
       </div>
     </div>
