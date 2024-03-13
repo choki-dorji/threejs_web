@@ -1,0 +1,68 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="tailwind.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <style>
+      body {
+        margin: 0;
+        background: #000;
+        -webkit-font-smoothing: antialiased;
+      }
+      .font-exo {
+        font-family: "Exo 2", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+
+      .exo-2 {
+        font-family: "Exo 2", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex h-screen lg:flex-row md:flex-col sm:flex-col font-exo">
+      <div
+        class="bg-black text-white flex justify-center flex-col md:w-screen sm:w-screen">
+        <div style="max-width: 500px" class="pl-12">
+          <h1 class="text-4xl mb-8 leading-none">
+            CHALLENGING THE STANDARD OF THE SPACE
+          </h1>
+          <p class="text-gray-400 mb-2 exo-2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+            natus quasi, ipsum est impedit dolorem eaque doloribus nisi rem odit
+            suscipit ex expedita culpa. Facere voluptatibus totam quaerat dolor
+            laborum.
+          </p>
+        </div>
+        <div class="p-12">
+          <a
+            href=""
+            class="bg-green-600 inline-block px-8 py-4 rounded-full exo-2">
+            Learn More
+          </a>
+        </div>
+      </div>
+      <div class="w-1/2 md:w-screen sm:w-screen" id="canvascontainer">
+        <canvas class="webgl"></canvas>
+      </div>
+    </div>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
